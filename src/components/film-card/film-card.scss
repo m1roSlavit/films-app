@@ -1,0 +1,40 @@
+.film-card {
+
+  &__title-link {
+    text-decoration: none;
+  }
+
+  &__img {
+    position: relative;
+    height: 314px;
+    cursor: pointer;
+  }
+
+  &__bg-img {
+    height: 100%;
+    width: 100%;
+    background-position: center center;
+    background-size: cover;
+  }
+
+  &__adult {
+    position: absolute;
+    right: 10px;
+    top: 30px;
+  }
+
+  &__rate {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+  }
+
+  &__glyph {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: #595959;
+  }
+}

@@ -1,5 +1,9 @@
 import movieService from "../../services/movieService";
 
+export const FETCH_GENRES = 'FETCH_GENRES';
+export const FETCH_GENRES_SUCCESS = 'FETCH_GENRES_SUCCESS';
+export const FETCH_GENRES_FAILURE = 'FETCH_GENRES_FAILURE';
+
 export const genresRequested = () => ({
   type: FETCH_GENRES,
 });
@@ -17,8 +21,8 @@ export const genresRequestedFailure = (payload) => ({
 export const fetchGenres = () => (dispatch) => {
   dispatch(genresRequested());
   movieService.getGenres()
-    .then(filmsData => {
-      dispatch(genresRequestedSuccess(filmsData));
+    .then(genres => {
+      dispatch(genresRequestedSuccess(genres));
     })
     .catch(_ => {
       dispatch(genresRequestedFailure('Ops... Something went wrong'));

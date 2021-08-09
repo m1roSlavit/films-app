@@ -35,11 +35,6 @@ const PopularFilms = () => {
             <Spinner />
           </div>
         }
-        endMessage={
-          <div className='d-flex justify-content-center mt-3'>
-            <strong>Yay! You have seen it all</strong>
-          </div>
-        }
       >
         <FilmsList films={films} genres={genres}/>
       </InfiniteScroll>

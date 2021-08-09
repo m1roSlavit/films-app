@@ -1,0 +1,30 @@
+.film-card-mini {
+
+  background-position: center center;
+  background-size: cover;
+  border-radius: 10px;
+  position: relative;
+
+  &__content {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+  }
+
+  &__delete {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    line-height: 18px;
+    border: none;
+    background-color: transparent;
+    color: #E8F6FF;
+  }
+
+  &__title {
+
+  }
+}

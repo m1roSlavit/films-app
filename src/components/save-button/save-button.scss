@@ -1,0 +1,19 @@
+.save-button {
+  border: none;
+  background-color: transparent;
+  color: #C17582;
+  font-size: 28px;
+  line-height: 28px;
+
+  &:hover {
+    color: #EA8E9E;
+  }
+
+  &_saved {
+    color: #c8c8c8;
+
+    &:hover {
+      color: #c8c8c8;
+    }
+  }
+}

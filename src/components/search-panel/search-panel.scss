@@ -1,0 +1,11 @@
+.search-panel {
+
+  &__input {
+    color: #E8F6FF;
+    border: none;
+
+    &:focus {
+      color: #E8F6FF;
+    }
+  }
+}

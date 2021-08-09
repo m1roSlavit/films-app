@@ -1,0 +1,24 @@
+.film-details {
+  background-position: center center;
+  background-size: cover;
+
+  &__content {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: 15px;
+    color: #bbbbbb;
+  }
+
+  &__left-col {
+
+  }
+
+  &__img {
+    img {
+      border: 1px solid blue;
+    }
+  }
+}

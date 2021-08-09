@@ -8,7 +8,7 @@ const initialState = {
   }
 };
 
-const genreReducers = (state = initialState, action) => {
+export const genreReducers = (state = initialState, action) => {
   switch (action.type) {
     case FETCH_GENRES:
       return {
@@ -41,5 +41,3 @@ const genreReducers = (state = initialState, action) => {
       return state;
   }
 };
-
-export default genreReducers;
